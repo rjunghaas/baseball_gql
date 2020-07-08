@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 =======
 # baseball_gql
->>>>>>> 5283f33b34d1b84a6e05f14c604f98ca2d7c5d0d
 This is a full stack web app to demonstrate using GraphQL using Typescript.
 
 One caveat here is that I was hoping to use local resolvers in the client, but React does not allow for calling the useQuery hook outside of a React component, so I needed to add logic inside the component to call useQuery there and also manage local state there.
