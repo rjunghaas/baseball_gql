@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 # baseball_gql
 This is a full stack web app to demonstrate using GraphQL using Typescript.
