@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    container_name: baseball_server
+    build:
+      context: .
+      dockerfile: dockerfile_server
+    shm_size: '2gb'
+    environment:
+      ENV_NAME: dev
+    ports:
+      - 5000:5000
+    depends_on:
+      - database
+  database:
+    container_name: baseball_dynamo
+    build:
+      context: .
+      dockerfile: dockerfile_db
+    ports:
+      - 8000:8000
